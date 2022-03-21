@@ -30,7 +30,7 @@ import (
 	"google.golang.org/api/option"
 	"google.golang.org/api/option/internaloption"
 	gtransport "google.golang.org/api/transport/grpc"
-	servicespb "github.com/shenzhencenter/google-ads-pb/services"
+	servicespb "github.com/robertbakker/google-ads-pb/services"
 	longrunningpb "google.golang.org/genproto/googleapis/longrunning"
 	statuspb "google.golang.org/genproto/googleapis/rpc/status"
 	"google.golang.org/grpc"

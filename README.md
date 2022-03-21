@@ -7,7 +7,7 @@ You can use the golang library to interact with the Google Ads API across grpc. 
 ## Installation
 
 ```
-$ go get -d github.com/shenzhencenter/google-ads-pb
+$ go get -d github.com/robertbakker/google-ads-pb
 ```
 
 ## Usage
@@ -41,7 +41,7 @@ test-google-account-name
 customers/1231234/campaigns/12341234123
 ```
 
-See [main.go](https://github.com/shenzhencenter/google-ads-pb/blob/main/main.go) and [examples](https://github.com/shenzhencenter/google-ads-pb/tree/main/examples) for more details.
+See [main.go](https://github.com/robertbakker/google-ads-pb/blob/main/main.go) and [examples](https://github.com/robertbakker/google-ads-pb/tree/main/examples) for more details.
 
 ## Documentation
 

@@ -46,7 +46,7 @@
 //
 //  req := &servicespb.CreateCampaignExperimentRequest{
 //  	// TODO: Fill request struct fields.
-//  	// See https://pkg.go.dev/github.com/shenzhencenter/google-ads-pb/services#CreateCampaignExperimentRequest.
+//  	// See https://pkg.go.dev/github.com/robertbakker/google-ads-pb/services#CreateCampaignExperimentRequest.
 //  }
 //  op, err := c.CreateCampaignExperiment(ctx, req)
 //  if err != nil {

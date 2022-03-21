@@ -3,7 +3,7 @@ package examples
 import (
 	"context"
 	"fmt"
-	"github.com/shenzhencenter/google-ads-pb/services"
+	"github.com/robertbakker/google-ads-pb/services"
 	"google.golang.org/grpc"
 )
 

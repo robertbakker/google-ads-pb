@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"github.com/caarlos0/env"
-	"github.com/shenzhencenter/google-ads-pb/examples"
-	"github.com/shenzhencenter/google-ads-pb/helpers"
+	"github.com/robertbakker/google-ads-pb/examples"
+	"github.com/robertbakker/google-ads-pb/helpers"
 	"time"
 )
 

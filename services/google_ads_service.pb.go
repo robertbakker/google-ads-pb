@@ -21,9 +21,9 @@
 package services
 
 import (
-	common "github.com/shenzhencenter/google-ads-pb/common"
-	enums "github.com/shenzhencenter/google-ads-pb/enums"
-	resources "github.com/shenzhencenter/google-ads-pb/resources"
+	common "github.com/robertbakker/google-ads-pb/common"
+	enums "github.com/robertbakker/google-ads-pb/enums"
+	resources "github.com/robertbakker/google-ads-pb/resources"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	status "google.golang.org/genproto/googleapis/rpc/status"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -2453,13 +2453,6 @@ func (x *MutateOperation) GetExperimentOperation() *ExperimentOperation {
 	return nil
 }
 
-func (x *MutateOperation) GetExperimentArmOperation() *ExperimentArmOperation {
-	if x, ok := x.GetOperation().(*MutateOperation_ExperimentArmOperation); ok {
-		return x.ExperimentArmOperation
-	}
-	return nil
-}
-
 func (x *MutateOperation) GetExtensionFeedItemOperation() *ExtensionFeedItemOperation {
 	if x, ok := x.GetOperation().(*MutateOperation_ExtensionFeedItemOperation); ok {
 		return x.ExtensionFeedItemOperation
@@ -2874,7 +2867,6 @@ type MutateOperation_ExperimentOperation struct {
 
 type MutateOperation_ExperimentArmOperation struct {
 	// An experiment arm mutate operation.
-	ExperimentArmOperation *ExperimentArmOperation `protobuf:"bytes,83,opt,name=experiment_arm_operation,json=experimentArmOperation,proto3,oneof"`
 }
 
 type MutateOperation_ExtensionFeedItemOperation struct {
@@ -7736,7 +7728,6 @@ var file_google_ads_googleads_v10_services_google_ads_service_proto_goTypes = []
 	(*CustomerOperation)(nil),                              // 216: google.ads.googleads.v10.services.CustomerOperation
 	(*CustomizerAttributeOperation)(nil),                   // 217: google.ads.googleads.v10.services.CustomizerAttributeOperation
 	(*ExperimentOperation)(nil),                            // 218: google.ads.googleads.v10.services.ExperimentOperation
-	(*ExperimentArmOperation)(nil),                         // 219: google.ads.googleads.v10.services.ExperimentArmOperation
 	(*ExtensionFeedItemOperation)(nil),                     // 220: google.ads.googleads.v10.services.ExtensionFeedItemOperation
 	(*FeedItemOperation)(nil),                              // 221: google.ads.googleads.v10.services.FeedItemOperation
 	(*FeedItemSetOperation)(nil),                           // 222: google.ads.googleads.v10.services.FeedItemSetOperation
@@ -8214,7 +8205,6 @@ func file_google_ads_googleads_v10_services_google_ads_service_proto_init() {
 	file_google_ads_googleads_v10_services_customer_negative_criterion_service_proto_init()
 	file_google_ads_googleads_v10_services_customer_service_proto_init()
 	file_google_ads_googleads_v10_services_customizer_attribute_service_proto_init()
-	file_google_ads_googleads_v10_services_experiment_arm_service_proto_init()
 	file_google_ads_googleads_v10_services_experiment_service_proto_init()
 	file_google_ads_googleads_v10_services_extension_feed_item_service_proto_init()
 	file_google_ads_googleads_v10_services_feed_item_service_proto_init()

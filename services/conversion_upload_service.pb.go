@@ -21,7 +21,7 @@
 package services
 
 import (
-	common "github.com/shenzhencenter/google-ads-pb/common"
+	common "github.com/robertbakker/google-ads-pb/common"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	status "google.golang.org/genproto/googleapis/rpc/status"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
