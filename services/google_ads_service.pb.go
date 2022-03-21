@@ -676,8 +676,6 @@ type GoogleAdsRow struct {
 	TopicView *resources.TopicView `protobuf:"bytes,44,opt,name=topic_view,json=topicView,proto3" json:"topic_view,omitempty"`
 	// The experiment referenced in the query.
 	Experiment *resources.Experiment `protobuf:"bytes,133,opt,name=experiment,proto3" json:"experiment,omitempty"`
-	// The experiment arm referenced in the query.
-	ExperimentArm *resources.ExperimentArm `protobuf:"bytes,183,opt,name=experiment_arm,json=experimentArm,proto3" json:"experiment_arm,omitempty"`
 	// The user interest referenced in the query.
 	UserInterest *resources.UserInterest `protobuf:"bytes,59,opt,name=user_interest,json=userInterest,proto3" json:"user_interest,omitempty"`
 	// The life event referenced in the query.
@@ -1712,13 +1710,6 @@ func (x *GoogleAdsRow) GetExperiment() *resources.Experiment {
 	return nil
 }
 
-func (x *GoogleAdsRow) GetExperimentArm() *resources.ExperimentArm {
-	if x != nil {
-		return x.ExperimentArm
-	}
-	return nil
-}
-
 func (x *GoogleAdsRow) GetUserInterest() *resources.UserInterest {
 	if x != nil {
 		return x.UserInterest
@@ -2006,7 +1997,6 @@ type MutateOperation struct {
 	//	*MutateOperation_CustomerOperation
 	//	*MutateOperation_CustomizerAttributeOperation
 	//	*MutateOperation_ExperimentOperation
-	//	*MutateOperation_ExperimentArmOperation
 	//	*MutateOperation_ExtensionFeedItemOperation
 	//	*MutateOperation_FeedItemOperation
 	//	*MutateOperation_FeedItemSetOperation
