@@ -7650,7 +7650,6 @@ var file_google_ads_googleads_v10_services_google_ads_service_proto_goTypes = []
 	(*resources.ThirdPartyAppAnalyticsLink)(nil),           // 148: google.ads.googleads.v10.resources.ThirdPartyAppAnalyticsLink
 	(*resources.TopicView)(nil),                            // 149: google.ads.googleads.v10.resources.TopicView
 	(*resources.Experiment)(nil),                           // 150: google.ads.googleads.v10.resources.Experiment
-	(*resources.ExperimentArm)(nil),                        // 151: google.ads.googleads.v10.resources.ExperimentArm
 	(*resources.UserInterest)(nil),                         // 152: google.ads.googleads.v10.resources.UserInterest
 	(*resources.LifeEvent)(nil),                            // 153: google.ads.googleads.v10.resources.LifeEvent
 	(*resources.UserList)(nil),                             // 154: google.ads.googleads.v10.resources.UserList
